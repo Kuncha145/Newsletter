@@ -83,9 +83,49 @@ p {
     color: white;
     font-weight: 600;
     font-size:18px;
+    transition: all 0.4s;
 }
 
 #content form .button:hover {
     background-color: var(--red);
     box-shadow: 5px 5px 10px 2px #ff7a718c;
+}
+
+@media only screen and (min-width:996px ) {
+    body {
+        background-color: var(--dark-blue);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    #container {
+        display: flex;
+        flex-direction: row-reverse;
+        width: fit-content;
+        background-color: white;
+        padding: 30px;
+        border-radius: 30px;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #hero #img-mobile {
+        display: none;
+
+    }
+
+    #hero #img-desktop {
+        display: block;
+        width: 400px;
+    }
+
+    #content {
+        width: 400px;
+    }
+
+    #content h1 {
+        font-size: 50px;
+    }
 }
